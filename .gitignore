@@ -1,0 +1,24 @@
+# dependencies
+fr-sellit/node_modules
+bk-sellit/node_modules
+
+# production
+*/build
+
+fr-sellit/.env
+bk-sellit/.env
+
+fr-sellit/.prettierignore
+fr-sellit/.prettierrc.json
+fr-sellit/.eslintignore
+fr-sellit/.eslintrc
+
+bk-sellit/.prettierignore
+bk-sellit/.prettierrc.json
+bk-sellit/.eslintignore
+bk-sellit/.eslintrc
+
+*/api.rest
+*/**.rest
+
+

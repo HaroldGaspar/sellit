@@ -1,0 +1,21 @@
+version: "3.5"
+
+services:
+  app:
+    image: node:12-alpine
+    # build: .
+    # dont get the workdir
+    volumes:
+      - ./fr-sellit/:/app:cached
+    working_dir: /app
+    ports:
+      - 3008:3008
+    command: yarn start
+  api:
+    image: node:12-alpine
+    working_dir: /app
+    volumes:
+      - ./bk-sellit/:/app
+    ports:
+      - 8000:8000
+    command: ["yarn", "develop"]
